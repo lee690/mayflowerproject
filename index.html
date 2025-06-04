@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>May Flower Child Care</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">May Flower Child Care</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><button id="contactBtn" class="contact-button">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to May Flower Child Care</h1>
+      <p>Family-style child care in a warm, nurturing environment.</p>
+      <button id="heroContactBtn" class="contact-button">Book a Visit</button>
+    </section>
+
+    <section class="preview-section">
+      <div class="preview">
+        <h2>About Us</h2>
+        <p>Learn about our mission and values.</p>
+        <a href="about.html" class="link-button">Read More</a>
+      </div>
+      <div class="preview">
+        <h2>Gallery</h2>
+        <p>See our learning spaces and activities.</p>
+        <a href="gallery.html" class="link-button">View Gallery</a>
+      </div>
+      <div class="preview">
+        <h2>Testimonials</h2>
+        <p>"May Flower Child Care has been a blessing for our family!"</p>
+        <a href="gallery.html#testimonials" class="link-button">Read More</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone (optional):</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+      <div id="formMessage" class="form-message"></div>
+    </div>
+  </div>
+
+  <script src="js/modal.js"></script>
+</body>
+</html>

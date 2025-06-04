@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - May Flower Child Care</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">May Flower Child Care</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><button id="contactBtn" class="contact-button">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery-section">
+      <h1>Gallery</h1>
+      <div class="image-grid">
+        <div class="image-item">
+          <img src="assets/images/placeholder1.jpg" alt="Activity 1">
+          <p class="caption">Art time fun!</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/placeholder2.jpg" alt="Activity 2">
+          <p class="caption">Playtime outdoors</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/placeholder3.jpg" alt="Activity 3">
+          <p class="caption">Circle time stories</p>
+        </div>
+        <div class="image-item">
+          <img src="assets/images/placeholder4.jpg" alt="Activity 4">
+          <p class="caption">Learning together</p>
+        </div>
+      </div>
+
+      <h2 id="testimonials">Parent Testimonials</h2>
+      <blockquote>
+        "I love seeing my child so happy and engaged!" - K.D.
+      </blockquote>
+      <blockquote>
+        "The environment here is simply wonderful." - M.R.
+      </blockquote>
+    </section>
+  </main>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone (optional):</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+      <div id="formMessage" class="form-message"></div>
+    </div>
+  </div>
+
+  <script src="js/modal.js"></script>
+</body>
+</html>

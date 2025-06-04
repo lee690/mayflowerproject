@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - May Flower Child Care</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">May Flower Child Care</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><button id="contactBtn" class="contact-button">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <h1>About May Flower Child Care</h1>
+      <p>Welcome! My name is May, and I am passionate about providing a warm, family-style child care environment. With over 10 years of experience, I hold certifications in early childhood education and am licensed by the state of Massachusetts.</p>
+      <p>Our philosophy is to nurture each child’s curiosity and creativity through play-based learning. We maintain a safe, clean, and loving home where every child feels valued and supported.</p>
+
+      <h2>Our Credentials</h2>
+      <ul>
+        <li>State Licensed Provider (Lic# 123456)</li>
+        <li>Certified in CPR & First Aid</li>
+        <li>Early Childhood Education Certificate</li>
+      </ul>
+
+      <h2>Parent Testimonials</h2>
+      <blockquote>
+        "May is an amazing caregiver! My child has thrived since joining her program." - A.S.
+      </blockquote>
+      <blockquote>
+        "Our family feels so lucky to have found May Flower Child Care. Highly recommend!" - J.L.
+      </blockquote>
+    </section>
+  </main>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone (optional):</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+      <div id="formMessage" class="form-message"></div>
+    </div>
+  </div>
+
+  <script src="js/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #FFF8F0;
+  color: #444;
+}
+a {
+  text-decoration: none;
+  color: #7A5C61;
+}
+button {
+  cursor: pointer;
+}
+
+/* Header */
+header {
+  background-color: #FFF;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #DDD;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7A5C61;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a, .contact-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+}
+.contact-button {
+  background-color: #CDEAC0;
+  border: 1px solid #CDEAC0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.contact-button:hover {
+  background-color: #B5E3A6;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+}
+.hero {
+  background-color: #FFD6E0;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  color: #7A5C61;
+  margin-bottom: 0.5rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.link-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #CDEAC0;
+  border: 1px solid #CDEAC0;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+.link-button:hover {
+  background-color: #B5E3A6;
+}
+
+/* Preview Sections */
+.preview-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.preview {
+  background-color: #FFF;
+  padding: 1.5rem;
+  flex: 1 1 calc(33% - 2rem);
+  border: 1px solid #EEE;
+  border-radius: 10px;
+  text-align: center;
+}
+.preview h2 {
+  color: #7A5C61;
+  margin-bottom: 0.5rem;
+}
+
+/* About Section */
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.about-section h1 {
+  font-size: 2rem;
+  color: #7A5C61;
+  margin-bottom: 1rem;
+}
+.about-section h2 {
+  font-size: 1.5rem;
+  color: #7A5C61;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.about-section ul {
+  list-style: disc inside;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Gallery Section */
+.gallery-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.gallery-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #7A5C61;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.image-item {
+  background-color: #FFF;
+  border: 1px solid #EEE;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.image-item img {
+  width: 100%;
+  display: block;
+}
+.caption {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Blog Section */
+.blog-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.blog-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #7A5C61;
+}
+.post-preview {
+  background-color: #FFF;
+  border: 1px solid #EEE;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.post-preview h2 {
+  color: #7A5C61;
+  margin-bottom: 0.5rem;
+}
+.post-meta {
+  font-size: 0.9rem;
+  color: #AAA;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Modal */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 200; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.modal-content {
+  background-color: #FFF;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #AAA;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.close:hover {
+  color: #444;
+}
+.modal-content h2 {
+  margin-bottom: 1rem;
+  color: #7A5C61;
+}
+.modal-content label {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+}
+.submit-button {
+  background-color: #FFD6E0;
+  border: 1px solid #FFD6E0;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+.submit-button:hover {
+  background-color: #FFAECF;
+}
+.form-message {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #7A5C61;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .preview { flex: 1 1 100%; }
+  header { flex-direction: column; align-items: flex-start; }
+  nav ul { flex-direction: column; gap: 0.5rem; }
+}
